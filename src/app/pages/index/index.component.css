@@ -1,0 +1,19 @@
+.water {
+    display: block;
+    font-family: "Georgia", sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    text-align: justify;
+    text-indent: 10%;
+    margin-top: 15px;
+}
+
+.slider{
+    display: none;
+    transition: 0.5s    
+}
+
+.show{
+    transition: 0.5s;
+    display: block;
+}

@@ -2,8 +2,8 @@ import {Component} from '@angular/core';
 
 @Component({
     moduleId:module.id,
-    selector:'',
-    templateUrl:''
+    selector:'admission',
+    templateUrl:'admission.component.html'
 })
 
-export class Name {}
+export class AdmissionComponent {}

@@ -1,11 +1,26 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {} from './index';
+import {
+    AdmissionComponent,
+    CommonPsychiatryComponent,
+    DailyComponent,
+    DispanserComponent    
+} from './index';
 
 @NgModule({
-    declarations:[],
-    imports:[],
-    exports:[]
+    declarations:[
+        AdmissionComponent,
+        CommonPsychiatryComponent,
+        DailyComponent,
+        DispanserComponent
+        ],
+    imports:[CommonModule],
+    exports:[
+        AdmissionComponent,
+        CommonPsychiatryComponent,
+        DailyComponent,
+        DispanserComponent
+        ]
 })
 
 export class DepartmentModule{}

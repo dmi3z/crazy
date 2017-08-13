@@ -5,12 +5,15 @@ import {FormsModule} from '@angular/forms';
 import {RouterModule} from '@angular/router';
 
 import {AboutModule} from './pages/about/about.module';
+import {DepartmentModule} from './pages/department/department.module';
 
 import { AppComponent } from './app.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
 import {
   IndexComponent,  
-  EmergencyComponent,  
+  EmergencyComponent, 
+  AnonimComponent,
+  TrustComponent 
 } from './pages/index';
 
 import {DataService} from './service/data.service';
@@ -22,13 +25,16 @@ import {routes} from './app.routes';
     AppComponent,
     MainMenuComponent,
     IndexComponent,    
-    EmergencyComponent,   
+    EmergencyComponent,
+    AnonimComponent,
+    TrustComponent  
   ],
   imports: [
     FormsModule,
     BrowserModule,
     HttpModule,
     AboutModule,
+    DepartmentModule,
     RouterModule.forRoot(routes)
   ],
   providers: [DataService],

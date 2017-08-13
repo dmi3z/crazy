@@ -5,11 +5,14 @@ import {
     IndexComponent,
     HistoryComponent,
     AboutComponent,
-    AppealsComponent
+    AppealsComponent,
+    AdmissionComponent,
+    CommonPsychiatryComponent,
+    DailyComponent,
+    DispanserComponent,
+    AnonimComponent,
+    TrustComponent
 } from './pages/index';
-
-
-
 
 
  export const routes:Routes =[
@@ -31,6 +34,14 @@ import {
         component:EmergencyComponent
     },
     {
+        path:"anonim",
+        component:AnonimComponent
+    },
+    {
+        path:"trust",
+        component:TrustComponent
+    },
+    {
         path:"history",
         component: HistoryComponent
     },
@@ -41,5 +52,22 @@ import {
     {
         path:"appeals",
         component:AppealsComponent
+    },
+    {
+        path:"admission",
+        component:AdmissionComponent
+    },
+    {
+        path:"common-psychiatry",
+        component:CommonPsychiatryComponent
+    },
+    {
+        path:"daily",
+        component:DailyComponent
+    },
+    {
+        path:"dispanser",
+        component:DispanserComponent
     }
+
  ];

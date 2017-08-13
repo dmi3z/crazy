@@ -4,7 +4,12 @@ import {
     AdmissionComponent,
     CommonPsychiatryComponent,
     DailyComponent,
-    DispanserComponent    
+    DispanserComponent,
+    MedicoPsichiatryComponent,
+    OrganizeMethodicComponent,
+    PediatricComponent,
+    PreborderComponent,
+    PreborderCenterComponent   
 } from './index';
 
 @NgModule({
@@ -12,14 +17,24 @@ import {
         AdmissionComponent,
         CommonPsychiatryComponent,
         DailyComponent,
-        DispanserComponent
+        DispanserComponent,
+        MedicoPsichiatryComponent,
+        OrganizeMethodicComponent,
+        PediatricComponent,
+        PreborderComponent,
+        PreborderCenterComponent
         ],
     imports:[CommonModule],
     exports:[
         AdmissionComponent,
         CommonPsychiatryComponent,
         DailyComponent,
-        DispanserComponent
+        DispanserComponent,
+        MedicoPsichiatryComponent,
+        OrganizeMethodicComponent,
+        PediatricComponent,
+        PreborderComponent,
+        PreborderCenterComponent
         ]
 })
 

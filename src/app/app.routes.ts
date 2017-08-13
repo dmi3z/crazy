@@ -11,7 +11,12 @@ import {
     DailyComponent,
     DispanserComponent,
     AnonimComponent,
-    TrustComponent
+    TrustComponent,
+    MedicoPsichiatryComponent,
+    OrganizeMethodicComponent,
+    PediatricComponent,
+    PreborderComponent,
+    PreborderCenterComponent
 } from './pages/index';
 
 
@@ -68,6 +73,25 @@ import {
     {
         path:"dispanser",
         component:DispanserComponent
+    },
+    {
+        path:"medico-psychiatry",
+        component:MedicoPsichiatryComponent
+    },
+    {
+        path:"organize-methodic",
+        component:OrganizeMethodicComponent
+    },
+    {
+        path:"pediatric",
+        component:PediatricComponent
+    },
+    {
+        path:"preborder",
+        component:PreborderComponent
+    },
+    {
+        path:"preborder-center",
+        component:PreborderCenterComponent
     }
-
  ];

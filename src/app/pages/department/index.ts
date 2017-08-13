@@ -2,3 +2,8 @@ export * from './admission/admission.component';
 export * from './common-psychiatry/common-psychiatry.component';
 export * from './daily/daily.component';
 export * from './dispanser/dispanser.component';
+export * from './medico-psychiatry/medico-psychiatry.component';
+export * from './organize-methodic/organize-methodic.component';
+export * from './pediatric/pediatric.component';
+export * from './preborder/preborder.component';
+export * from './preborder-center/preborder-center.component';

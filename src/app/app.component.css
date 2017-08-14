@@ -1,5 +1,6 @@
-p{
+p:host{
     text-indent: 1.5em;
+    text-align: justify;
 }
 
 .emerg{

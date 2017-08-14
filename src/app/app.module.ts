@@ -6,6 +6,7 @@ import {RouterModule} from '@angular/router';
 
 import {AboutModule} from './pages/about/about.module';
 import {DepartmentModule} from './pages/department/department.module';
+import {ServicesModule} from './pages/services/services.module';
 
 import { AppComponent } from './app.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
@@ -35,6 +36,7 @@ import {routes} from './app.routes';
     HttpModule,
     AboutModule,
     DepartmentModule,
+    ServicesModule,
     RouterModule.forRoot(routes)
   ],
   providers: [DataService],

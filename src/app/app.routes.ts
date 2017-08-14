@@ -16,7 +16,17 @@ import {
     OrganizeMethodicComponent,
     PediatricComponent,
     PreborderComponent,
-    PreborderCenterComponent
+    PreborderCenterComponent,
+    
+    //Services Component
+    AnalyzesComponent,
+    MassageComponent,
+    NarcologicalComponent,
+    PsychotherapeuticComponent,
+    PsychiatricComponent,
+    SexologicalComponent,
+    PsychologicalComponent,
+    PhysiotherapyComponent
 } from './pages/index';
 
 
@@ -93,5 +103,37 @@ import {
     {
         path:"preborder-center",
         component:PreborderCenterComponent
+    },
+    {
+        path:"analyzes",
+        component:AnalyzesComponent
+    },
+    {
+        path:"massage",
+        component:MassageComponent
+    },
+    {
+        path:"narcological",
+        component:NarcologicalComponent
+    },
+    {
+        path:"psychotherapeutic",
+        component:PsychotherapeuticComponent
+    },
+    {
+        path:"psychiatric",
+        component:PsychiatricComponent
+    },
+    {
+        path:"sexological",
+        component:SexologicalComponent
+    },
+    {
+        path:"psychological",
+        component:PsychologicalComponent
+    },
+    {
+        path:"physiotherapy",
+        component:PhysiotherapyComponent
     }
  ];

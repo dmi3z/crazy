@@ -7,6 +7,7 @@ import {RouterModule} from '@angular/router';
 import {AboutModule} from './pages/about/about.module';
 import {DepartmentModule} from './pages/department/department.module';
 import {ServicesModule} from './pages/services/services.module';
+import {SpecialistsModule} from './pages/specialists/specialists.module';
 
 import { AppComponent } from './app.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
@@ -37,6 +38,7 @@ import {routes} from './app.routes';
     AboutModule,
     DepartmentModule,
     ServicesModule,
+    SpecialistsModule,
     RouterModule.forRoot(routes)
   ],
   providers: [DataService],

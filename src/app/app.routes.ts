@@ -26,7 +26,14 @@ import {
     PsychiatricComponent,
     SexologicalComponent,
     PsychologicalComponent,
-    PhysiotherapyComponent
+    PhysiotherapyComponent,
+
+    //Specialists Component
+    RegulatoryBaseComponent,
+    TrainingsComponent,
+    ConferencesComponent,
+    MethodicalMaterialsComponent,
+    PreventionSuicideComponent
 } from './pages/index';
 
 
@@ -135,5 +142,25 @@ import {
     {
         path:"physiotherapy",
         component:PhysiotherapyComponent
+    },
+    {
+        path:"regulatory-base",
+        component:RegulatoryBaseComponent
+    },
+    {
+        path:"trainings",
+        component:TrainingsComponent
+    },
+    {
+        path:"conferences",
+        component:ConferencesComponent
+    },
+    {
+        path:"methodical-materials",
+        component:MethodicalMaterialsComponent
+    },
+    {
+        path:"prevention-suicide",
+        component:PreventionSuicideComponent
     }
  ];

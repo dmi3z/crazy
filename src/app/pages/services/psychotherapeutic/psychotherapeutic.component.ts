@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
     moduleId:module.id,
@@ -6,4 +7,11 @@ import {Component} from '@angular/core';
     templateUrl:'psychotherapeutic.component.html'
 })
 
-export class PsychotherapeuticComponent {}
+export class PsychotherapeuticComponent {
+    constructor(private router:Router){}
+    
+        goTo(param){
+            this.router.navigate([param]);
+        }
+
+}

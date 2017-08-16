@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
     moduleId:module.id,
@@ -6,4 +7,10 @@ import {Component} from '@angular/core';
     templateUrl:'sexological.component.html'
 })
 
-export class SexologicalComponent {}
+export class SexologicalComponent {
+    constructor(private router:Router){}
+    
+        goTo(param){
+            this.router.navigate([param]);
+        }
+}

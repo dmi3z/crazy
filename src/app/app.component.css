@@ -1,6 +1,10 @@
-p:host{
+:host /deep/ p{
     text-indent: 1.5em;
     text-align: justify;
+}
+
+:host /deep/ a:hover {
+    cursor: pointer;
 }
 
 .emerg{

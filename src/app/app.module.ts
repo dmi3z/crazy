@@ -8,6 +8,7 @@ import {AboutModule} from './pages/about/about.module';
 import {DepartmentModule} from './pages/department/department.module';
 import {ServicesModule} from './pages/services/services.module';
 import {SpecialistsModule} from './pages/specialists/specialists.module';
+import {PacientsModule} from './pages/pacients/pacients.module';
 
 import { AppComponent } from './app.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
@@ -39,6 +40,7 @@ import {routes} from './app.routes';
     DepartmentModule,
     ServicesModule,
     SpecialistsModule,
+    PacientsModule,
     RouterModule.forRoot(routes)
   ],
   providers: [DataService],

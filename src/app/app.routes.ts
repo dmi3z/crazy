@@ -33,7 +33,15 @@ import {
     TrainingsComponent,
     ConferencesComponent,
     MethodicalMaterialsComponent,
-    PreventionSuicideComponent
+    PreventionSuicideComponent,
+
+    //Pacients Component
+    ContactsComponent,
+    HospitalizationComponent,
+    InformationComponent,
+    InnerRulesComponent,
+    SchemeComponent
+
 } from './pages/index';
 
 
@@ -53,15 +61,15 @@ import {
     },
     {
         path:"emergency",
-        component:EmergencyComponent
+        component: EmergencyComponent
     },
     {
         path:"anonim",
-        component:AnonimComponent
+        component: AnonimComponent
     },
     {
         path:"trust",
-        component:TrustComponent
+        component: TrustComponent
     },
     {
         path:"history",
@@ -69,19 +77,19 @@ import {
     },
     {
         path:"about",
-        component:AboutComponent
+        component: AboutComponent
     },
     {
         path:"appeals",
-        component:AppealsComponent
+        component: AppealsComponent
     },
     {
         path:"admission",
-        component:AdmissionComponent
+        component: AdmissionComponent
     },
     {
         path:"common-psychiatry",
-        component:CommonPsychiatryComponent
+        component: CommonPsychiatryComponent
     },
     {
         path:"daily",
@@ -89,15 +97,15 @@ import {
     },
     {
         path:"dispanser",
-        component:DispanserComponent
+        component: DispanserComponent
     },
     {
         path:"medico-psychiatry",
-        component:MedicoPsichiatryComponent
+        component: MedicoPsichiatryComponent
     },
     {
         path:"organize-methodic",
-        component:OrganizeMethodicComponent
+        component: OrganizeMethodicComponent
     },
     {
         path:"pediatric",
@@ -105,15 +113,15 @@ import {
     },
     {
         path:"preborder",
-        component:PreborderComponent
+        component: PreborderComponent
     },
     {
         path:"preborder-center",
-        component:PreborderCenterComponent
+        component: PreborderCenterComponent
     },
     {
         path:"analyzes",
-        component:AnalyzesComponent
+        component: AnalyzesComponent
     },
     {
         path:"massage",
@@ -121,23 +129,23 @@ import {
     },
     {
         path:"narcological",
-        component:NarcologicalComponent
+        component: NarcologicalComponent
     },
     {
         path:"psychotherapeutic",
-        component:PsychotherapeuticComponent
+        component: PsychotherapeuticComponent
     },
     {
         path:"psychiatric",
-        component:PsychiatricComponent
+        component: PsychiatricComponent
     },
     {
         path:"sexological",
-        component:SexologicalComponent
+        component: SexologicalComponent
     },
     {
         path:"psychological",
-        component:PsychologicalComponent
+        component: PsychologicalComponent
     },
     {
         path:"physiotherapy",
@@ -145,22 +153,42 @@ import {
     },
     {
         path:"regulatory-base",
-        component:RegulatoryBaseComponent
+        component: RegulatoryBaseComponent
     },
     {
         path:"trainings",
-        component:TrainingsComponent
+        component: TrainingsComponent
     },
     {
         path:"conferences",
-        component:ConferencesComponent
+        component: ConferencesComponent
     },
     {
         path:"methodical-materials",
-        component:MethodicalMaterialsComponent
+        component: MethodicalMaterialsComponent
     },
     {
         path:"prevention-suicide",
-        component:PreventionSuicideComponent
+        component: PreventionSuicideComponent
+    },
+    {
+        path:"contacts",
+        component: ContactsComponent
+    },
+    {
+        path:"hospitalization",
+        component: HospitalizationComponent
+    },
+    {
+        path:"information",
+        component: InformationComponent
+    },
+    {
+        path:"inner-rules",
+        component: InnerRulesComponent
+    },
+    {
+        path:"scheme",
+        component: SchemeComponent
     }
  ];

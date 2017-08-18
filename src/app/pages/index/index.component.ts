@@ -24,7 +24,7 @@ export class IndexComponent {
         ];
 
 constructor(){
-   // setInterval(()=>{this.changeImage();},2000);
+   setInterval(()=>{this.changeImage();},7000);
 }
 
 ngOnInit(){

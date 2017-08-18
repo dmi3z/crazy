@@ -4,7 +4,20 @@
             <h3>ЦЕНТР ПОГРАНИЧНЫХ СОСТОЯНИЙ</h3>
         </div>
     </div>
-    
+</div>
+<div class="row">
+        <div class="col-md-10 col-md-offset-1">
+           <div class="loading" *ngIf = "loaderCheck()">
+                <span>Загрузка таблицы... </span> <img src="/assets/images/loader.gif"/>
+           </div>
+           <table *ngIf = "!loaderCheck()" class="tbl" style="width: 100%">
+                <thead class="text-center">
+                    <td style="width: 40%"><b>Должность</b></td>
+                    <td><b>Ф.И.О.</b></td>
+                    <td><b>Телефон</b></td>
+                </thead>                
+            </table>
+        </div>
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <p>С целью повышения доступности психотерапевтической помощи для населения города Гомеля, прием врачей психотерапевтом был вынесен

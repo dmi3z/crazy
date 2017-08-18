@@ -9,12 +9,14 @@
 }
 
 .slider{
-    display: none;
-    transition: 0.5s    
+    position: absolute;
+    opacity: 0;
+    transition: 4s    
 }
 
 .show{
-    transition: 0.5s;
+    opacity: 1;
+    transition: 4s;
     display: block;
 }
 
@@ -24,4 +26,10 @@
     font-size: 16px;
     font-style: italic;
     margin-bottom: 25px;
+}
+.text{
+    margin-top: 44%;
+}
+img{
+    width: 100%;
 }

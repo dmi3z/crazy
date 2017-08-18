@@ -7,3 +7,4 @@ export * from './emergency/emergency.component';
 export * from './index/index.component';
 export * from './anonim/anonim.component';
 export * from './trust/trust.component';
+export * from './news/news.component';

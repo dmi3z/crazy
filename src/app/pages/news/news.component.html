@@ -1,0 +1,22 @@
+<div class="container page">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h3>НОВОСТИ</h3>
+            </div>
+        </div>
+    
+        <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                   <div class="loading" *ngIf = "loaderCheck()">
+                        <span>Загрузка новостей... </span> <img src="/assets/images/loader.gif"/>
+                   </div>
+                   <table *ngIf = "!loaderCheck()" class="tbl" style="width: 100%">
+                        <thead class="text-center">
+                            <td><b>Дата</b></td>
+                            <td><b>Ф.И.О.</b></td>
+                            <td><b>Телефон</b></td>
+                        </thead>                
+                    </table>
+                </div>
+    </div>
+</div>

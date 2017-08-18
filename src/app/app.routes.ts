@@ -1,5 +1,6 @@
 import {Routes} from '@angular/router';
 import {
+    NewsComponent,
     AdministrationComponent,
     EmergencyComponent,
     IndexComponent,
@@ -190,5 +191,9 @@ import {
     {
         path:"scheme",
         component: SchemeComponent
+    },
+    {
+        path:"news",
+        component: NewsComponent
     }
  ];

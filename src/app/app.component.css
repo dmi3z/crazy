@@ -7,6 +7,11 @@
     cursor: pointer;
 }
 
+:host /deep/ .loading{
+    width: 100%;
+    text-align: center;
+}
+
 .emerg{
     display: inline-block;
     background-color: #ec393a;

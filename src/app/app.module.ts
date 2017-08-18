@@ -16,7 +16,8 @@ import {
   IndexComponent,  
   EmergencyComponent, 
   AnonimComponent,
-  TrustComponent 
+  TrustComponent,
+  NewsComponent 
 } from './pages/index';
 
 import {DataService} from './service/data.service';
@@ -30,7 +31,8 @@ import {routes} from './app.routes';
     IndexComponent,    
     EmergencyComponent,
     AnonimComponent,
-    TrustComponent  
+    TrustComponent,
+    NewsComponent  
   ],
   imports: [
     FormsModule,

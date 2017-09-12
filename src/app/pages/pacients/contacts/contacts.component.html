@@ -6,16 +6,58 @@
     </div>
 
     <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-               <div class="loading" *ngIf = "loaderCheck()">
-                    <span>Загрузка таблицы... </span> <img src="/assets/images/loader.gif"/>
-               </div>
-               <table *ngIf = "!loaderCheck()" class="tbl" style="width: 100%">
-                    <thead class="text-center">
-                        <td style="width: 40%"><b>Должность</b></td>
-                        <td><b>Ф.И.О.</b></td>
-                        <td><b>Телефон</b></td>
-                    </thead>                
-                </table>
+        <div class="col-md-10 col-md-offset-1">
+            <div class="loading" *ngIf = "loaderCheckAdmin()">
+                 <span>Загрузка таблицы... </span> <img src="/assets/images/loader.gif"/>
             </div>
+            <table *ngIf = "!loaderCheckAdmin()" class="tbl" style="width: 100%">
+                <thead class="text-center">
+                     <td><b>Должность</b></td>
+                    <td><b>Ф.И.О.</b></td>
+                     <td><b>Телефон</b></td>
+                </thead>
+                <tr *ngFor="let person of admin">
+                     <td>{{person.position}}</td>
+                     <td>{{person.name}}</td>
+                     <td>{{person.phone}}</td>
+             </tr>                 
+             </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="loading" *ngIf = "loaderCheckAmbulator()">
+                 <span>Загрузка таблицы... </span> <img src="/assets/images/loader.gif"/>
+            </div>
+            <table *ngIf = "!loaderCheckAmbulator()" class="tbl" style="width: 100%">
+                <thead class="text-center">
+                     <td><b>Наименование</b></td>
+                     <td><b>Телефон</b></td>
+                </thead>
+                <tr *ngFor="let position of ambulator">
+                     <td>{{position.name}}</td>
+                     <td>{{position.phone}}</td>
+             </tr>                 
+             </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="loading" *ngIf = "loaderCheckStacionar()">
+                 <span>Загрузка таблицы... </span> <img src="/assets/images/loader.gif"/>
+            </div>
+            <table *ngIf = "!loaderCheckStacionar()" class="tbl" style="width: 100%">
+                <thead class="text-center">
+                     <td><b>Отделение</b></td>
+                     <td><b>Телефон</b></td>
+                </thead>
+                <tr *ngFor="let depart of stacionar">
+                     <td>{{depart.name}}</td>
+                     <td>{{depart.phone}}</td>
+             </tr>                 
+             </table>
+        </div>
+    </div>
 </div>

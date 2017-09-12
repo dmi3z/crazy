@@ -12,6 +12,17 @@
     text-align: center;
 }
 
+:host /deep/ table{
+    font-style: 10px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+:host /deep/ td{
+    width: 16.5%;
+    border: 1px solid black;
+    padding: 10px;
+}
+
 .emerg{
     display: inline-block;
     background-color: #ec393a;

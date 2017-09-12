@@ -11,7 +11,7 @@ import {Table} from '../../../service/table';
 export class PediatricComponent {
     
     table:Table[] = [];
-    selector:string = 'pediatric';
+    selector:string = 'Pediatr_depart';
 
     constructor(private dataService:DataService){  
     }

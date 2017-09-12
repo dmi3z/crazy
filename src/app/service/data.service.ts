@@ -14,19 +14,28 @@ export class DataService{
     }   
 
     getData(selector):Observable<Table[]>{
-        //console.log("Enter in data service!");
-        if(selector!='contacts'){
+                
             return this.http.get(this.url.concat(selector)).map((resp:Response)=> {
                 let tableList =resp.json();
                 let table:Table[]=[];
-                //console.log(productList);
-               // for(let elem of productList){
-               //     products.push({id:elem.Id,name:elem.Name,price:elem.Price});
-               // }                
+                for(let elem of tableList){
+                    table.push({id:elem.id,name:elem.Name,position:elem.Position,phone:elem.Phone});
+                }               
                 return table;
-            });
-        }        
+            });               
     }
+
+    getSimpleData(selector):Observable<Table[]>{
+        
+    return this.http.get(this.url.concat(selector)).map((resp:Response)=> {
+        let tableList =resp.json();
+        let table:Table[]=[];
+        for(let elem of tableList){
+            table.push({id:elem.id,name:elem.Depart,position:'none',phone:elem.Phone});
+        }               
+        return table;
+    });               
+}
 
     getNews():Observable<News[]>{
                 

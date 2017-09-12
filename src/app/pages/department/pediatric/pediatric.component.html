@@ -11,10 +11,15 @@
                </div>
                <table *ngIf = "!loaderCheck()" class="tbl" style="width: 100%">
                     <thead class="text-center">
-                        <td style="width: 40%"><b>Должность</b></td>
+                        <td><b>Должность</b></td>
                         <td><b>Ф.И.О.</b></td>
                         <td><b>Телефон</b></td>
-                    </thead>                
+                    </thead>
+                    <tr *ngFor="let person of table">
+                        <td>{{person.position}}</td>
+                        <td>{{person.name}}</td>
+                        <td class="text-center">{{person.phone}}</td>
+                </tr>               
                 </table>
             </div>
     <div class="row">

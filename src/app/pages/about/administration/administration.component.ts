@@ -5,15 +5,14 @@ import {Table} from '../../../service/table';
 @Component({
     moduleId:module.id,
     selector:'administration',
-    templateUrl:'administration.component.html',
-    styleUrls:['./administration.component.css']
+    templateUrl:'administration.component.html'
 })
 
 
 export class AdministrationComponent implements OnInit{
 
     table:Table[] = [];
-    selector:string = 'admin';
+    selector:string = 'Administartions';
 
     constructor(private dataService:DataService){  
     }

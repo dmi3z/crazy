@@ -11,7 +11,7 @@ import {Table} from '../../../service/table';
 export class MedicoPsichiatryComponent {
 
     table:Table[] = [];
-    selector:string = 'dispanser';
+    selector:string = 'MedicoPsychology_depart';
 
     constructor(private dataService:DataService){  
     }

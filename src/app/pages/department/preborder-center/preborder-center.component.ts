@@ -10,7 +10,7 @@ import {Table} from '../../../service/table';
 
 export class PreborderCenterComponent {
     table:Table[] = [];
-    selector:string = 'preborder-ceneter';
+    selector:string = 'Preborder_center';
 
     constructor(private dataService:DataService){  
     }

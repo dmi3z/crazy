@@ -10,19 +10,46 @@ import {Table} from '../../../service/table';
 
 export class ContactsComponent {
 
-    table:Table[] = [];
-    selector:string = 'contacts';
+    admin:Table[] = [];
+    ambulator:Table[] = [];
+    stacionar:Table[] = [];
+    selector:string[] = ['Administartions','Ambulator_service','Stacionare_service'];
 
     constructor(private dataService:DataService){  
     }
     ngOnInit(){
-        this.dataService.getData(this.selector).subscribe(
-            data=>this.table =data,
-            error => error,
-            ()=>this.table = this.table);
+        
+            this.dataService.getData(this.selector[0]).subscribe(
+                data=>this.admin =data,
+                error => error,
+                ()=>this.admin = this.admin);
+            
+            this.dataService.getSimpleData(this.selector[1]).subscribe(
+                 data=>this.ambulator =data,
+                 error => error,
+                 ()=>this.ambulator = this.ambulator);
+
+            this.dataService.getSimpleData(this.selector[2]).subscribe(
+                data=>this.stacionar =data,
+                error => error,
+                ()=>this.stacionar = this.stacionar);        
+        
     }
-    loaderCheck(){
-        while(this.table.length<=0){
+    
+    loaderCheckAdmin(){
+        while(this.admin.length<=0){
+            return true;
+        }
+    }
+
+    loaderCheckAmbulator(){
+        while(this.ambulator.length<=0){
+            return true;
+        }
+    }
+
+    loaderCheckStacionar(){
+        while(this.stacionar.length<=0){
             return true;
         }
     }

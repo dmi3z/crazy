@@ -11,7 +11,7 @@ import {Table} from '../../../service/table';
 export class DispanserComponent {
 
     table:Table[] = [];
-    selector:string = 'dispanser';
+    selector:string = 'Dispans_depart';
 
     constructor(private dataService:DataService){  
     }
